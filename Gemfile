@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 gem 'sqlite3', group: [:development, :test]
 gem 'rails_12factor', group: :production
