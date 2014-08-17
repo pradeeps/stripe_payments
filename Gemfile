@@ -14,7 +14,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
-
+gem "figaro"
 gem 'sqlite3', group: [:development, :test]
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
