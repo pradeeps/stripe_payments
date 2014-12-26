@@ -10,12 +10,26 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'spring', group: :development
-
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem "figaro"
-gem "letter_opener", group: :development
-gem 'sqlite3', group: [:development, :test]
-gem 'rails_12factor', group: :production
-gem 'pg', group: :production
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'devise'
+
+group :development do
+	gem "letter_opener"
+end
+
+group :development, :test do 
+	gem 'sqlite3'
+	gem 'spring'
+end
+
+group :production do 
+	gem 'rails_12factor'
+	gem 'pg'
+end
+
+group :sdoc do 
+	gem 'sdoc', '~> 0.4.0'
+end
+
