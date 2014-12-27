@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
  root 'products#index'
  resources :charges
- resources :products, only: [:index]
- resources :purchases, only: ["show"]
+ resources :products, only: [:index, :show]
+ resources :purchases, only: [:show]
 end
